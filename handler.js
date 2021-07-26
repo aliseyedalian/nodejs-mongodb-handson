@@ -1,3 +1,5 @@
+var querystring = require('querystring');
+
 function home(response) {
     console.log("executing home() in handler")
     var htmlfile = '<html>' +
@@ -16,8 +18,11 @@ function home(response) {
     response.end();
 }
 
-function review(response) {
-    console.log("executing review() in handler")
+function review(response, reviewData) {
+    console.log("executing review() in handler");
+    response.writeHead(200, { "Content-Type": "text/plain" });
+    response.write("Your Review is:\n\t" + querystring.parse(reviewData).text);
+    response.end();
 }
 
 exports.home = home
