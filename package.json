@@ -1,0 +1,23 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sedaliSedalian/website-temp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sedaliSedalian/website-temp/issues"
+  },
+  "homepage": "https://github.com/sedaliSedalian/website-temp#readme",
+  "dependencies": {
+    "mongodb": "^4.0.1"
+  }
+}
